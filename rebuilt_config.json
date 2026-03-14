@@ -97,9 +97,9 @@
           "description": "What color is your robot on?",
           "type": "select",
           "required": true,
-          "code": "climbed",
+          "code": "redorblue",
           "formResetBehavior": "reset",
-          "defaultValue": "No",
+          "defaultValue": "Red",
           "choices": {
             "Red": "Red",
             "Blue": "Blue"
@@ -124,7 +124,7 @@
           "description": "Approximate fuel attempted during autonomous.",
           "type": "multi-counter",
           "required": false,
-          "code": "autoFuelScored",
+          "code": "autoFuelAttempted",
           "formResetBehavior": "reset",
           "defaultValue": 0
         },
@@ -133,7 +133,7 @@
           "description": "Approximate fuel scored during teleop.",
           "type": "multi-counter",
           "required": false,
-          "code": "teleopFuelScored",
+          "code": "autoFuelScored",
           "formResetBehavior": "reset",
           "defaultValue": 0
         },
@@ -146,9 +146,9 @@
           "formResetBehavior": "reset",
           "defaultValue": "No",
           "choices": {
-            "No": "No Climb",
-            "Yes": "Climb",
-            "F": "Failed Climb"
+            "No Climb": "No Climb",
+            "Yes Climb": "Climb",
+            "F Climb": "Failed Climb"
           }
         },
         {
@@ -185,7 +185,7 @@
           "description": "Approximate fuel attempted during autonomous.",
           "type": "multi-counter",
           "required": false,
-          "code": "autoFuelScored",
+          "code": "transitionFuelAttempted",
           "formResetBehavior": "reset",
           "defaultValue": 0
         },
@@ -194,7 +194,7 @@
           "description": "Approximate fuel scored during teleop.",
           "type": "multi-counter",
           "required": false,
-          "code": "teleopFuelScored",
+          "code": "transitionFuelScored",
           "formResetBehavior": "reset",
           "defaultValue": 0
         }
@@ -208,7 +208,7 @@
           "description": "What shift did your robot receive?",
           "type": "select",
           "required": true,
-          "code": "climbed",
+          "code": "shifts",
           "formResetBehavior": "reset",
           "defaultValue": "No",
           "choices": {
@@ -221,7 +221,7 @@
           "description": "Approximate fuel attempted during autonomous.",
           "type": "multi-counter",
           "required": false,
-          "code": "autoFuelScored",
+          "code": "teleopFuelAttempted",
           "formResetBehavior": "reset",
           "defaultValue": 0
         },
@@ -239,7 +239,7 @@
           "description": "How did your robot go to the middle",
           "type": "select",
           "required": false,
-          "code": "autoClimbPos",
+          "code": "trenchorstuff",
           "formResetBehavior": "reset",
           "defaultValue": "No",
           "choices": {
@@ -263,7 +263,7 @@
           "description": "Was the robot defended by an opponent during the match?",
           "type": "boolean",
           "required": false,
-          "code": "robotDefended",
+          "code": "robotWasDefended",
           "formResetBehavior": "reset",
           "defaultValue": false
         },
@@ -316,7 +316,7 @@
           "description": "Did the robot climb during autonomous?",
           "type": "select",
           "required": false,
-          "code": "autoClimbed",
+          "code": "endgameClimbed",
           "formResetBehavior": "reset",
           "defaultValue": "No",
           "choices": {
@@ -330,7 +330,7 @@
           "description": "Where on the tower did the robot climb in autonomous?",
           "type": "select",
           "required": false,
-          "code": "autoClimbPos",
+          "code": "endgameClimbPos",
           "formResetBehavior": "reset",
           "defaultValue": "No",
           "choices": {
@@ -423,3 +423,4 @@
     }
   ]
 }
+ 
